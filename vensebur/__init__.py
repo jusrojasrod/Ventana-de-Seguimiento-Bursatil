@@ -4,4 +4,4 @@ from indicators import _PM
 from indicators import _bollinger_bands
 
 
-__ALL__ = ['_sma', '_std', '_PM', '_bollinger_bands']
+__all__ = ['_sma', '_std', '_PM', '_bollinger_bands']
