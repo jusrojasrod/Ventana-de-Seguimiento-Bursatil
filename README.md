@@ -1,1 +1,1 @@
-# Ventana-de-Seguimiento-Bursatil
+# Ventanas de Seguimiento Bursátil
