@@ -21,9 +21,10 @@ import concurrent.futures
 import threading
 from functools import partial
 
-import config
-import utils
-import shared
+from . import config
+from . import utils
+from . import shared
+
 
 thread_local = threading.local()
 
