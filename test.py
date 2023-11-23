@@ -1,7 +1,7 @@
-import vensebur.EODHDdata
+import vensebur.EODHDdata.data as data
 
 
-df = vensebur.EODHDdata.data.download(ticker="TSLA",
-                                      start="2023-10-10", end="2023-10-12")
+df = data.download(ticker="TSLA",
+                   start="2023-10-10", end="2023-10-12")
 
 print(df)
