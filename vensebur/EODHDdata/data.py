@@ -21,9 +21,10 @@ import concurrent.futures
 import threading
 from functools import partial
 
-import config
-import utils
-import shared
+from . import config
+from . import utils
+from . import shared
+
 
 thread_local = threading.local()
 
@@ -103,7 +104,7 @@ def downloadAllTickers(tickers, start, end, period='d', _filter=None,
         Group by 'ticker' or 'column' (default)
 
     """
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+    with concurrent.futures.ThreadPoolExecutor() as executor:
         executor.map(partial(handle_data, start=start, end=end,
                              period=period, _filter=_filter),
                      tickers)
